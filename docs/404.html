@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 — Página não encontrada</title>
+    <meta name="theme-color" content="#00ff6a" />
+    <link rel="icon" href="assets/bos-bot.png" />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body class="pipboy">
+    <div class="screen crt">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="index.html#top" aria-label="Início">
+            <img src="assets/bos-bot.png" alt="Logo do bot" class="brand-logo" />
+            <span class="brand-name" data-bot-name>Meu Bot</span>
+          </a>
+          <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="privacy.html">Privacidade</a>
+            <label class="crt-toggle small" title="Alternar efeito CRT">
+              <input id="crtToggle" type="checkbox" checked /> CRT
+            </label>
+          </nav>
+        </div>
+      </header>
+      <main class="section">
+        <div class="container">
+          <h1>Erro 404</h1>
+          <p class="subtitle">Arquivo não localizado no Terminal.</p>
+          <div class="card" style="margin-top:16px">
+            <p>Tente voltar para a <a href="index.html">página inicial</a> ou acesse a <a href="sobre.html">página Sobre</a>.</p>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <span>© <span id="year"></span> <span data-bot-name>Meu Bot</span>. Não é afiliado ao Discord.</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+  </html>

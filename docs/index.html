@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Bot do Discord</title>
+  <meta name="description" content="Conheça o bot do Discord: recursos, comandos e link de convite para adicionar no seu servidor." />
+  <meta name="theme-color" content="#00ff6a" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Meu Bot do Discord" />
+    <meta property="og:description" content="Adicione o bot ao seu servidor e conheça os recursos." />
+    <meta property="og:image" content="assets/logo.svg" />
+    <meta property="og:url" content="." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="assets/bos-bot.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body class="pipboy">
+    <div class="screen crt">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Início">
+          <img src="assets/bos-bot.png" alt="Logo do bot" class="brand-logo" />
+          <span class="brand-name" data-bot-name>Meu Bot</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">☰</button>
+        <nav id="siteNav" class="nav">
+          <a href="#recursos">Recursos</a>
+          <a href="#comandos">Comandos</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="privacy.html">Privacidade</a>
+          <a href="#adicionar" class="invite-cta small">Convidar</a>
+          <label class="crt-toggle small" title="Alternar efeito CRT">
+            <input id="crtToggle" type="checkbox" checked /> CRT
+          </label>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Leve o <span data-bot-name>Meu Bot</span> para o seu servidor</h1>
+            <p class="subtitle">
+              Chame a Brotherhood of Steel para o seu servidor! Com esse bot, você tem moderação, diversão e utilidades bacanas para uso
+            </p>
+            <div class="cta-row">
+              <a id="inviteBtnHero" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Convidar o bot</a>
+              <a href="#recursos" class="btn btn-secondary">Ver recursos</a>
+            </div>
+            <div id="inviteWarning" class="warn hidden" role="status"></div>
+          </div>
+          <div class="hero-art">
+            <img id="botAvatar" src="assets/bos-bot.png" alt="Avatar do bot" />
+          </div>
+        </div>
+      </section>
+
+      <section id="recursos" class="section">
+        <div class="container">
+          <h2>Recursos principais</h2>
+          <div class="grid features">
+            <article class="card">
+              <h3>Diversão</h3>
+              <p>Interações e muito mais para animar seu servidor.</p>
+            </article>
+            <article class="card">
+              <h3>Utilidades</h3>
+              <p>Cheque informações do servidor, do bot, cheque o ping do bot e muito mais.</p>
+            </article>
+            <article class="card">
+              <h3>Integrações</h3>
+              <p>Compatível com slash commands e permissões do Discord modernas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="comandos" class="section alt">
+        <div class="container">
+          <h2>Comandos populares</h2>
+          <div class="grid commands">
+            <article class="cmd">
+              <code>/ajuda</code>
+              <p>Lista todos os comandos e como usar.</p>
+            </article>
+            <article class="cmd">
+              <code>/olá</code>
+              <p>Diga olá para o bot.</p>
+            </article>
+            <article class="cmd">
+              <code>/limpar</code>
+              <p>Apaga rapidamente um lote de mensagens.</p>
+            </article>
+            <article class="cmd">
+              <code>/ping</code>
+              <p>Mostra a latência do bot.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="adicionar" class="section">
+        <div class="container">
+          <h2>Adicionar ao seu servidor</h2>
+          <p>Use o botão abaixo para autorizar o bot no seu servidor. Você precisa ter permissão para gerenciar o servidor.</p>
+          <div class="cta-center">
+            <a id="inviteBtn" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Convidar o bot</a>
+          </div>
+          <div class="support">
+            <span>Precisa de ajuda?</span>
+            <a id="supportLink" target="_blank" rel="noopener noreferrer">Entrar no servidor de suporte</a>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> <span data-bot-name>Meu Bot</span>. Não é afiliado ao Discord.</span>
+        <div class="footer-links">
+          <a href="sobre.html">Sobre</a>
+          <a href="privacy.html">Privacidade</a>
+          <a href="https://discord.com/terms" target="_blank" rel="noopener">Termos do Discord</a>
+          <a href="https://discord.com/privacy" target="_blank" rel="noopener">Privacidade do Discord</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+  </html>

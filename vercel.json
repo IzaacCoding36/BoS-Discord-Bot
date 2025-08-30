@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "bos-discord-bot-site",
+  "public": true,
+  "builds": [
+    { "src": "docs/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/docs/index.html" },
+    { "src": "/sobre", "dest": "/docs/sobre.html" },
+    { "src": "/privacidade|/privacy", "dest": "/docs/privacy.html" },
+    { "src": "/assets/(.*)", "dest": "/docs/assets/$1" },
+    { "src": "/(.*)", "dest": "/docs/$1" }
+  ]
+}

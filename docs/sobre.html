@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre — BoS Bot</title>
+    <meta name="description" content="Saiba mais sobre o BoS Bot e sua proposta." />
+    <meta name="theme-color" content="#00ff6a" />
+    <link rel="icon" href="assets/bos-bot.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body class="pipboy">
+    <div class="screen crt">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="index.html#top" aria-label="Início">
+            <img src="assets/bos-bot.png" alt="Logo do bot" class="brand-logo" />
+            <span class="brand-name" data-bot-name>Meu Bot</span>
+          </a>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">☰</button>
+          <nav id="siteNav" class="nav">
+            <a href="index.html#recursos">Recursos</a>
+            <a href="index.html#comandos">Comandos</a>
+            <a href="sobre.html" aria-current="page">Sobre</a>
+            <a href="privacy.html">Privacidade</a>
+            <a href="index.html#adicionar" class="invite-cta small">Convidar</a>
+            <label class="crt-toggle small" title="Alternar efeito CRT">
+              <input id="crtToggle" type="checkbox" checked /> CRT
+            </label>
+          </nav>
+        </div>
+      </header>
+
+      <main class="section">
+        <div class="container">
+          <h1>BoS Bot</h1>
+          <p class="subtitle"></p>
+
+          <div class="grid features" style="margin-top:16px">
+            <article class="card">
+              <h3>O que é BoS?</h3>
+              <p>BoS significa Brotherhood of Steel, ou em português, a irmandade do aço, uma dos grupos da série de jogos Fallout, conhecidos pelo seu toque tecnológico e de grande poder.</p>
+            </article>
+            <article class="card">
+              <h3>Objetivos do bot</h3>
+              <p>Esse bot possui o objetivo de garantir a diversão mantendo sua funcionalidade principal: auxiliar usuários.</p>
+            </article>
+            <article class="card">
+              <h3>Hospedagem e gerenciamento</h3>
+              <p>Esse bot foi criado e hospedado com a ajuda de Bot Designer for Discord, e hospedado pelo mesmo, por essa razão, não posso garantir a constante funcionalidade do bot.</p>
+            </article>
+            <article class="card">
+              <h3>Funcionalidades</h3>
+              <p>o bot possui funcionalidades comuns, sendo de utilidades até para administração de servidores, atualizarei o bot de tempos em tempos para mantê-lo funcional, com comandos slash e todas suas demais funcionalidade</p>
+            </article>
+          </div>
+
+          <div class="cta-center" style="margin-top:18px">
+            <a id="inviteBtn" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Convidar o bot</a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <span>© <span id="year"></span> <span data-bot-name>Meu Bot</span>. Não é afiliado ao Discord.</span>
+          <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="sobre.html" aria-current="page">Sobre</a>
+            <a href="privacy.html">Privacidade</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  </html>
